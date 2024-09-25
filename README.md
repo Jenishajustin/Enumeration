@@ -50,24 +50,17 @@ link: This operator allows you to search for pages that link to a specific URL. 
 cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
 
  
-#DNS Enumeration
+# DNS Enumeration
 
 
-##DNS Recon
+## DNS Recon
 provides the ability to perform:
 Check all NS records for zone transfers
 Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TXT)
 Perform common SRV Record Enumeration
 Top level domain expansion
-## OUTPUT:
 
-
-
-
-
-
-
-##dnsenum
+## dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
 Get the host’s addresses (A record).
@@ -81,8 +74,7 @@ Perform reverse lookups on netranges (C class or/and whois netranges) (threaded)
 Write to domain_ips.txt file ip-blocks.
 This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
 
-
-##smtp-user-enum
+## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
 
 
@@ -91,22 +83,45 @@ In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 select any username in the first column of the above file and check the same
 
 
-#Telnet for smtp enumeration
+# Telnet for smtp enumeration
 Telnet allows to connect to remote host based on the port no. For smtp port no is 25
 telnet <host address> 25 to connect
 and issue appropriate commands
-  
- ##Output
-  
-  
-
+ 
 ## nmap –script smtp-enum-users.nse <hostname>
 
 The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
-
-
 ## OUTPUT:
+#### site
+![site](https://github.com/user-attachments/assets/df43ced9-5fbb-4ae6-8f12-3a2a51e5970f)
 
+#### filetype
+![filetype](https://github.com/user-attachments/assets/c61da550-ff2e-4c5c-aaf3-0d00cb5c302d)
+
+#### intext
+![intext](https://github.com/user-attachments/assets/ef239e70-728b-4aac-97cf-4f442f9219ce)
+
+#### inurl
+![inurl](https://github.com/user-attachments/assets/762fdbad-2390-491f-ac4f-966c6d3d74fc)
+
+#### intitle
+![index_of](https://github.com/user-attachments/assets/c8f72b4d-5aa7-48f8-b90f-eacb9f8e1b7e)
+
+#### link
+![link](https://github.com/user-attachments/assets/8af991d6-074e-436d-9ab9-b3aae2541670)
+
+### DNS Enumeration
+#### DNS Recon
+![dns_recon](https://github.com/user-attachments/assets/210c52d0-1455-46a1-9e82-3316276840b2)
+
+#### dnsenum
+![dns_enum](https://github.com/user-attachments/assets/87c2f03b-5a00-4a01-81c3-d7216918ffa0)
+
+#### smtp-user-enum
+![smtp-user-enum](https://github.com/user-attachments/assets/0e4ae5a0-6bd5-42d5-8917-c4ac6dcd784d)
+
+#### nmap –script smtp-enum-users.nse
+![nmap](https://github.com/user-attachments/assets/75fab9a9-be0d-4c26-89b0-098f3f8e69f2)
 
 ## RESULT:
 The Google hacking keywords and enumeration tools were identified and executed successfully
